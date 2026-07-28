@@ -16,6 +16,10 @@ db.sqlite-*
 .vercel
 .netlify
 .history
-# Exclude npm lockfile so it can't overwrite pnpm node_modules in the image
+# Exclude npm lockfiles so they can't overwrite pnpm node_modules in the image
 package-lock.json
 npm-shrinkwrap.json
+# Exclude test result artifacts from host
+/test-results
+.codevalid/ui/recording
+.codevalid/ui/run-results

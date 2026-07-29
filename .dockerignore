@@ -23,3 +23,10 @@ npm-shrinkwrap.json
 /test-results
 .codevalid/ui/recording
 .codevalid/ui/run-results
+# Playwright browser cache (installed at build time inside image)
+.playwright
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

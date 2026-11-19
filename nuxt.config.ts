@@ -16,6 +16,17 @@ export default defineNuxtConfig({
   hub: {
     db: 'sqlite'
   },
+  // Allow overriding GitHub OAuth endpoints via env for CodeValid test infrastructure.
+  // NUXT_OAUTH_GITHUB_AUTHORIZATION_URL, NUXT_OAUTH_GITHUB_TOKEN_URL, NUXT_OAUTH_GITHUB_API_URL
+  runtimeConfig: {
+    oauth: {
+      github: {
+        authorizationURL: '',
+        tokenURL: '',
+        apiURL: ''
+      }
+    }
+  },
   // Development config
   eslint: {
     config: {
